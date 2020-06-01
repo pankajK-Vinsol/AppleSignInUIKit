@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		46C80B09248515F20099D171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B08248515F20099D171 /* AppDelegate.swift */; };
 		46C80B0B248515F20099D171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B0A248515F20099D171 /* SceneDelegate.swift */; };
-		46C80B0D248515F20099D171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B0C248515F20099D171 /* ViewController.swift */; };
-		46C80B10248515F20099D171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C80B0E248515F20099D171 /* Main.storyboard */; };
 		46C80B12248515F30099D171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C80B11248515F30099D171 /* Assets.xcassets */; };
 		46C80B15248515F30099D171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C80B13248515F30099D171 /* LaunchScreen.storyboard */; };
+		46C80B20248516290099D171 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B1D248516290099D171 /* NewsfeedViewController.swift */; };
+		46C80B21248516290099D171 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B1E248516290099D171 /* LoginViewController.swift */; };
+		46C80B22248516290099D171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B1F248516290099D171 /* ProfileViewController.swift */; };
+		46C80B27248516C80099D171 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B25248516C80099D171 /* AuthState.swift */; };
+		46C80B28248516C80099D171 /* SignInWithAppleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C80B26248516C80099D171 /* SignInWithAppleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46C80B05248515F20099D171 /* SignInWithAppleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C80B08248515F20099D171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C80B0A248515F20099D171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46C80B0C248515F20099D171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46C80B0F248515F20099D171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46C80B11248515F30099D171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C80B14248515F30099D171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C80B16248515F30099D171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C80B1D248516290099D171 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
+		46C80B1E248516290099D171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46C80B1F248516290099D171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		46C80B232485167E0099D171 /* SignInWithAppleUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleUIKit.entitlements; sourceTree = "<group>"; };
+		46C80B25248516C80099D171 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		46C80B26248516C80099D171 /* SignInWithAppleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +63,35 @@
 		46C80B07248515F20099D171 /* SignInWithAppleUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				46C80B232485167E0099D171 /* SignInWithAppleUIKit.entitlements */,
+				46C80B24248516C80099D171 /* SignInWithAppleUIKitHelpers */,
+				46C80B1C248516290099D171 /* ViewControllers */,
 				46C80B08248515F20099D171 /* AppDelegate.swift */,
 				46C80B0A248515F20099D171 /* SceneDelegate.swift */,
-				46C80B0C248515F20099D171 /* ViewController.swift */,
-				46C80B0E248515F20099D171 /* Main.storyboard */,
 				46C80B11248515F30099D171 /* Assets.xcassets */,
 				46C80B13248515F30099D171 /* LaunchScreen.storyboard */,
 				46C80B16248515F30099D171 /* Info.plist */,
 			);
 			path = SignInWithAppleUIKit;
+			sourceTree = "<group>";
+		};
+		46C80B1C248516290099D171 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46C80B1D248516290099D171 /* NewsfeedViewController.swift */,
+				46C80B1E248516290099D171 /* LoginViewController.swift */,
+				46C80B1F248516290099D171 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		46C80B24248516C80099D171 /* SignInWithAppleUIKitHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				46C80B25248516C80099D171 /* AuthState.swift */,
+				46C80B26248516C80099D171 /* SignInWithAppleManager.swift */,
+			);
+			path = SignInWithAppleUIKitHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				46C80B15248515F30099D171 /* LaunchScreen.storyboard in Resources */,
 				46C80B12248515F30099D171 /* Assets.xcassets in Resources */,
-				46C80B10248515F20099D171 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C80B0D248515F20099D171 /* ViewController.swift in Sources */,
+				46C80B28248516C80099D171 /* SignInWithAppleManager.swift in Sources */,
+				46C80B22248516290099D171 /* ProfileViewController.swift in Sources */,
 				46C80B09248515F20099D171 /* AppDelegate.swift in Sources */,
 				46C80B0B248515F20099D171 /* SceneDelegate.swift in Sources */,
+				46C80B21248516290099D171 /* LoginViewController.swift in Sources */,
+				46C80B20248516290099D171 /* NewsfeedViewController.swift in Sources */,
+				46C80B27248516C80099D171 /* AuthState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46C80B0E248515F20099D171 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46C80B0F248515F20099D171 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46C80B13248515F30099D171 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,8 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleUIKit/SignInWithAppleUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SignInWithAppleUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +325,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleUIKit/SignInWithAppleUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SignInWithAppleUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
